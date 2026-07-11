@@ -56,8 +56,26 @@ color:#d4af37;
 .hero{
 height:100vh;
 background:
-linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.65)),
-url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80');
+linear-gradient(rgba(0,0,0,.45),rgba(0,0,0,.65)),
+url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=2000&q=100');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+animation: zoomHero 12s infinite alternate;
+}
+
+@keyframes zoomHero{
+from{
+background-size:100%;
+}
+to{
+background-size:115%;
+}
+}
 background-size:cover;
 background-position:center;
 display:flex;
@@ -261,7 +279,7 @@ display:none;
 <p>Elegant Curtains, Luxury Bedding, Trusted Quality</p>
 
 <a href="https://wa.me/917029520364" class="btn">
-WhatsApp Order
+💬 Order on WhatsApp
 </a>
 
 </div>
