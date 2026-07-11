@@ -1,9 +1,543 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jakir Bedding House</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#000;
+color:#fff;
+}
+
+header{
+position:fixed;
+top:0;
+left:0;
+width:100%;
+background:rgba(0,0,0,0.95);
+padding:15px 8%;
+display:flex;
+justify-content:space-between;
+align-items:center;
+z-index:1000;
+border-bottom:1px solid #d4af37;
+}
+
+.logo{
+font-size:28px;
+font-weight:700;
+color:#d4af37;
+}
+
+nav a{
+color:#fff;
+text-decoration:none;
+margin-left:20px;
+transition:.3s;
+}
+
+nav a:hover{
+color:#d4af37;
+}
+
+.hero{
+height:100vh;
+background:
+linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.65)),
+url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=1600&q=80');
+background-size:cover;
+background-position:center;
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+padding:20px;
+}
+
+.hero-content h1{
+font-size:65px;
+color:#d4af37;
+margin-bottom:15px;
+}
+
+.hero-content p{
+font-size:22px;
+margin-bottom:25px;
+}
+
+.btn{
+display:inline-block;
+background:#d4af37;
+color:#000;
+padding:14px 35px;
+border-radius:40px;
+font-weight:600;
+text-decoration:none;
+transition:.3s;
+}
+
+.btn:hover{
+transform:scale(1.08);
+}
+
+section{
+padding:90px 8%;
+}
+
+.section-title{
+text-align:center;
+font-size:42px;
+color:#d4af37;
+margin-bottom:50px;
+}
+
+.products{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:25px;
+}
+
+.card{
+background:#111;
+border:1px solid #d4af37;
+border-radius:15px;
+overflow:hidden;
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
+}
+
+.card img{
+width:100%;
+height:250px;
+object-fit:cover;
+}
+
+.card-content{
+padding:18px;
+text-align:center;
+}
+
+.card-content h3{
+margin-bottom:15px;
+}
+
+.action-btn{
+display:inline-block;
+margin:5px;
+padding:10px 18px;
+border:none;
+border-radius:25px;
+cursor:pointer;
+font-weight:600;
+}
+
+.whatsapp-btn{
+background:#25D366;
+color:#fff;
+}
+
+.details-btn{
+background:#d4af37;
+color:#000;
+}
+
+.heart{
+font-size:24px;
+cursor:pointer;
+margin-bottom:12px;
+display:block;
+}
+
+.about{
+max-width:900px;
+margin:auto;
+text-align:center;
+line-height:1.9;
+font-size:18px;
+}
+
+.features{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+gap:20px;
+text-align:center;
+}
+
+.feature-box{
+background:#111;
+padding:25px;
+border:1px solid #d4af37;
+border-radius:15px;
+}
+
+.review{
+background:#111;
+padding:20px;
+border:1px solid #d4af37;
+border-radius:15px;
+margin-bottom:20px;
+}
+
+.contact{
+text-align:center;
+line-height:2;
+font-size:18px;
+}
+
+footer{
+background:#111;
+padding:40px;
+text-align:center;
+border-top:1px solid #d4af37;
+}
+
+.floating-whatsapp{
+position:fixed;
+right:20px;
+bottom:20px;
+background:#25D366;
+color:white;
+padding:15px 18px;
+border-radius:50%;
+text-decoration:none;
+font-size:24px;
+z-index:999;
+}
+
+@media(max-width:768px){
+
+.hero-content h1{
+font-size:38px;
+}
+
+.hero-content p{
+font-size:18px;
+}
+
+nav{
+display:none;
+}
+
+}
+
+</style>
 </head>
+
 <body>
-<h1>Jakir Bedding House Premium V4 Coming Soon</h1>
+
+<header>
+<div class="logo">Jakir Bedding House</div>
+
+<nav>
+<a href="#curtains">Curtains</a>
+<a href="#bedding">Bedding</a>
+<a href="#about">About</a>
+<a href="#contact">Contact</a>
+</nav>
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>Jakir Bedding House</h1>
+
+<p>Elegant Curtains, Luxury Bedding, Trusted Quality</p>
+
+<a href="https://wa.me/917029520364" class="btn">
+WhatsApp Order
+</a>
+
+</div>
+
+</section>
+<section id="curtains">
+
+<h2 class="section-title">Curtain Collection</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80">
+<div class="card-content">
+<span class="heart">🤍</span>
+<h3>Royal Gold Curtain</h3>
+<button class="action-btn details-btn">View Details</button>
+<a href="https://wa.me/917029520364" class="action-btn whatsapp-btn">WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80">
+<div class="card-content">
+<span class="heart">🤍</span>
+<h3>Premium Window Curtain</h3>
+<button class="action-btn details-btn">View Details</button>
+<a href="https://wa.me/917029520364" class="action-btn whatsapp-btn">WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80">
+<div class="card-content">
+<span class="heart">🤍</span>
+<h3>Luxury Designer Curtain</h3>
+<button class="action-btn details-btn">View Details</button>
+<a href="https://wa.me/917029520364" class="action-btn whatsapp-btn">WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80">
+<div class="card-content">
+<span class="heart">🤍</span>
+<h3>Modern Curtain Design</h3>
+<button class="action-btn details-btn">View Details</button>
+<a href="https://wa.me/917029520364" class="action-btn whatsapp-btn">WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?auto=format&fit=crop&w=800&q=80">
+<div class="card-content">
+<span class="heart">🤍</span>
+<h3>Classic Curtain</h3>
+<button class="action-btn details-btn">View Details</button>
+<a href="https://wa.me/917029520364" class="action-btn whatsapp-btn">WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?auto=format&fit=crop&w=800&q=80">
+<div class="card-content">
+<span class="heart">🤍</span>
+<h3>Premium Home Curtain</h3>
+<button class="action-btn details-btn">View Details</button>
+<a href="https://wa.me/917029520364" class="action-btn whatsapp-btn">WhatsApp</a>
+</div>
+</div>
+
+</div>
+</section>
+
+<section id="bedding">
+
+<h2 class="section-title">Bedding Collection</h2>
+
+<div class="products">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80">
+<div class="card-content">
+<span class="heart">🤍</span>
+<h3>Luxury Bedsheet</h3>
+<button class="action-btn details-btn">View Details</button>
+<a href="https://wa.me/917029520364" class="action-btn whatsapp-btn">WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80">
+<div class="card-content">
+<span class="heart">🤍</span>
+<h3>Premium Bedding Set</h3>
+<button class="action-btn details-btn">View Details</button>
+<a href="https://wa.me/917029520364" class="action-btn whatsapp-btn">WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80">
+<div class="card-content">
+<span class="heart">🤍</span>
+<h3>Comfort Pillow Set</h3>
+<button class="action-btn details-btn">View Details</button>
+<a href="https://wa.me/917029520364" class="action-btn whatsapp-btn">WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80">
+<div class="card-content">
+<span class="heart">🤍</span>
+<h3>Luxury Blanket</h3>
+<button class="action-btn details-btn">View Details</button>
+<a href="https://wa.me/917029520364" class="action-btn whatsapp-btn">WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80">
+<div class="card-content">
+<span class="heart">🤍</span>
+<h3>Premium Comforter</h3>
+<button class="action-btn details-btn">View Details</button>
+<a href="https://wa.me/917029520364" class="action-btn whatsapp-btn">WhatsApp</a>
+</div>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=800&q=80">
+<div class="card-content">
+<span class="heart">🤍</span>
+<h3>Designer Bedding</h3>
+<button class="action-btn details-btn">View Details</button>
+<a href="https://wa.me/917029520364" class="action-btn whatsapp-btn">WhatsApp</a>
+</div>
+</div>
+
+</div>
+</section>
+<section id="about">
+
+<h2 class="section-title">About Us</h2>
+
+<div class="about">
+Jakir Bedding House is dedicated to providing elegant curtains,
+premium bedding collections and stylish home decoration products.
+We focus on quality, customer satisfaction and beautiful designs
+that enhance the comfort and beauty of your home.
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Why Choose Us</h2>
+
+<div class="features">
+
+<div class="feature-box">
+<h3>Premium Quality</h3>
+<p>High quality products for your home.</p>
+</div>
+
+<div class="feature-box">
+<h3>Elegant Design</h3>
+<p>Modern and luxury collections.</p>
+</div>
+
+<div class="feature-box">
+<h3>Trusted Service</h3>
+<p>Customer satisfaction is our priority.</p>
+</div>
+
+<div class="feature-box">
+<h3>Wide Collection</h3>
+<p>Curtains, bedding and home decor.</p>
+</div>
+
+</div>
+
+</section>
+
+<section>
+
+<h2 class="section-title">Customer Reviews</h2>
+
+<div class="review">
+⭐⭐⭐⭐⭐<br>
+Beautiful curtain collection and excellent service.
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐<br>
+Very good quality bedding products.
+</div>
+
+<div class="review">
+⭐⭐⭐⭐⭐<br>
+Highly recommended for home decoration products.
+</div>
+
+</section>
+
+<section id="contact">
+
+<h2 class="section-title">Contact & Location</h2>
+
+<div class="contact">
+
+📞 Phone: 7029520364<br>
+
+📱 WhatsApp: 7029520364<br>
+
+📧 Email: jakirbeddinghouse@gmail.com<br>
+
+📍 Goruhart 2 No Goli,<br>
+Dhulian, Samserganj,<br>
+Murshidabad, West Bengal - 742202
+
+</div>
+
+</section>
+
+<footer>
+
+<h3>Jakir Bedding House</h3>
+
+<br>
+
+<p>
+Elegant Curtains, Luxury Bedding, Trusted Quality
+</p>
+
+<br>
+
+<p>
+Privacy Policy |
+Terms & Conditions |
+Disclaimer |
+Contact Us
+</p>
+
+<br>
+
+<p>
+© 2026 Jakir Bedding House. All Rights Reserved.
+</p>
+
+</footer>
+
+<a class="floating-whatsapp"
+href="https://wa.me/917029520364"
+target="_blank">
+💬
+</a>
+
+<script>
+
+document.querySelectorAll('.heart').forEach(function(item){
+
+item.addEventListener('click',function(){
+
+if(this.innerHTML==="🤍"){
+this.innerHTML="❤️";
+}else{
+this.innerHTML="🤍";
+}
+
+});
+
+});
+
+</script>
+
 </body>
 </html>
