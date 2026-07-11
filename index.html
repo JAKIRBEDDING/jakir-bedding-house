@@ -1,79 +1,219 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Jakir Bedding House</title>
+
 <style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:Arial, sans-serif;
+}
+
 body{
-margin:0;
-font-family:Arial,sans-serif;
-background:#f5f5f5;
-}
-
-.header{
-background:#111;
+background:#000;
 color:white;
+}
+
+.hero{
+height:100vh;
+background:linear-gradient(rgba(0,0,0,.7),rgba(0,0,0,.7)),
+url('https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=1600');
+background-size:cover;
+background-position:center;
+display:flex;
+flex-direction:column;
+justify-content:center;
+align-items:center;
 text-align:center;
-padding:60px 20px;
+padding:20px;
 }
 
-.header h1{
-font-size:50px;
-margin:0;
+.hero h1{
+font-size:60px;
+color:#d4af37;
+margin-bottom:15px;
 }
 
-.header p{
-font-size:20px;
+.hero p{
+font-size:22px;
+margin-bottom:25px;
 }
 
-.gallery{
-padding:40px;
+.btn{
+background:#d4af37;
+color:black;
+padding:15px 35px;
+text-decoration:none;
+font-weight:bold;
+border-radius:50px;
+transition:.4s;
+}
+
+.btn:hover{
+transform:scale(1.08);
+}
+
+.section{
+padding:80px 10%;
+}
+
+.section-title{
+text-align:center;
+font-size:40px;
+color:#d4af37;
+margin-bottom:40px;
+}
+
+.cards{
 display:grid;
 grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
-gap:20px;
+gap:25px;
 }
 
 .card{
-background:white;
+background:#111;
+border:1px solid #d4af37;
 border-radius:15px;
 overflow:hidden;
-box-shadow:0 5px 15px rgba(0,0,0,0.15);
+transition:.4s;
+}
+
+.card:hover{
+transform:translateY(-10px);
 }
 
 .card img{
 width:100%;
-height:300px;
+height:250px;
 object-fit:cover;
 }
 
 .card h3{
-text-align:center;
 padding:15px;
+text-align:center;
+color:#d4af37;
+}
+
+.about{
+text-align:center;
+line-height:1.8;
+font-size:18px;
+max-width:900px;
+margin:auto;
+}
+
+.contact{
+text-align:center;
+line-height:2;
+font-size:18px;
+}
+
+footer{
+background:#111;
+text-align:center;
+padding:20px;
+margin-top:40px;
+border-top:1px solid #d4af37;
+}
+
+@media(max-width:768px){
+.hero h1{
+font-size:38px;
+}
+.hero p{
+font-size:18px;
+}
 }
 </style>
 </head>
 
 <body>
 
-<div class="header">
+<section class="hero">
 <h1>Jakir Bedding House</h1>
-<p>Premium Curtain Collection</p>
-</div>
+<p>Premium Curtains, Bedding & Home Decoration Collection</p>
 
-<div class="gallery">
+<a class="btn"
+href="https://wa.me/917029520364"
+target="_blank">
+WhatsApp Order Now
+</a>
+</section>
+
+<section class="section">
+<h2 class="section-title">Curtain Collection</h2>
+
+<div class="cards">
 
 <div class="card">
-<h3>Curtain Collection 1</h3>
+<img src="https://images.unsplash.com/photo-1513694203232-719a280e022f?w=800">
+<h3>Luxury Curtain</h3>
 </div>
 
 <div class="card">
-<h3>Curtain Collection 2</h3>
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800">
+<h3>Premium Window Curtain</h3>
 </div>
 
 <div class="card">
-<h3>Curtain Collection 3</h3>
+<img src="https://images.unsplash.com/photo-1484154218962-a197022b5858?w=800">
+<h3>Modern Curtain Design</h3>
 </div>
 
 </div>
+</section>
+
+<section class="section">
+<h2 class="section-title">Bedding Collection</h2>
+
+<div class="cards">
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800">
+<h3>Premium Bed Sheet</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800">
+<h3>Luxury Pillow Set</h3>
+</div>
+
+<div class="card">
+<img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?w=800">
+<h3>Comfort Bedding</h3>
+</div>
+
+</div>
+</section>
+
+<section class="section">
+<h2 class="section-title">About Us</h2>
+
+<div class="about">
+Jakir Bedding House provides premium quality curtains,
+bedsheets, pillows and home decoration products.
+We focus on quality, elegant design and customer satisfaction.
+</div>
+</section>
+
+<section class="section">
+<h2 class="section-title">Contact & Location</h2>
+
+<div class="contact">
+📞 Mobile: 7029520364<br>
+📱 WhatsApp: 7029520364<br>
+📍 Goruhart 2 No Goli, Dhulian, Samserganj,<br>
+Murshidabad, West Bengal - 742202
+</div>
+</section>
+
+<footer>
+© 2026 Jakir Bedding House | All Rights Reserved
+</footer>
 
 </body>
 </html>
